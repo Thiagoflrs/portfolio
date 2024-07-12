@@ -1,0 +1,570 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+:root {
+    --cor-letra: #FFFF;
+    --cor-header: rgb(14, 15, 15);
+    --cor-azul-bb: rgb(32, 180, 238);
+
+}
+
+body {
+   height: 3667px;
+   width: 1930;
+   background-color: black;
+   @media (min-width:320px) and (max-width:480px) {
+    width: 480px;
+    height: 1729px;
+   }
+}
+    
+.pag1 { /*Página incial*/
+    width: 1835px;
+    height: 1082px;
+    background-image: url(./imagens/port.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    @media (min-width:320px) and (max-width:480px) {
+        background-image: url(./imagens/portdig.jpg);
+        width: 480px;
+        height: 269px;
+    }
+}
+
+header { /*Cabeçalho página inicial*/
+    width: 1930px;
+    height: 100px;
+    position: fixed;
+    @media (min-width:320px) and (max-width:480px) {
+        width: 480px;
+        height: 35px;
+    }   
+    & nav {
+        width: 1930px;
+        height: 100px;
+        transition: 2s;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        @media (min-width:320px) and (max-width:480px) {
+            width: 480px;
+            height: 35px;
+
+        }
+    }
+    & .logo {
+        width: 200px;
+        text-align: center;
+        color: #FFFF;
+        @media (min-width:320px) and (max-width:480px) {
+            width: 70px;
+        }
+        & h1 {
+            font-size: 18px;
+            font-family: cursive;
+            @media (min-width:320px) and (max-width:480px) {
+                font-size: 8px;
+            }
+        }
+        & p {
+            font-size: 10px;
+            @media (min-width:320px) and (max-width:480px) {
+                font-size: 6px;
+            }
+        }
+    }
+    & ul {
+        display: flex;
+        gap: 8rem;
+        list-style: none;
+        @media (min-width:320px) and (max-width:480px) {
+            gap: 15px;
+        }
+        & a {
+            text-decoration: none;
+            color: #FFFF;
+            font-size: 18px;
+            font-weight: 600;
+            @media (min-width:320px) and (max-width:480px) {
+                font-size: 8px;
+                font-weight: 600;
+            }
+            &:hover {
+                color: rgb(32, 180, 238);
+                transition: 0.5s;
+            }
+        }    
+    }
+    & .icons { /*icons header*/
+        width: 150px;
+        height: 20px;
+        display: flex;
+        gap: 45px;
+        @media (min-width:320px) and (max-width:480px) {
+            width: 70px;
+            height: 10px;
+            gap: 15px;
+        }
+
+        & a {
+            font-size: 18px;
+           @media (min-width:320px) and (max-width:480px) {
+            font-size: 8px;
+           }
+        }
+
+        & .fa-brands {
+            font-size: 18px;
+            margin-left: auto;
+            margin-right: auto;
+            color: #FFFF;
+            @media (min-width:320px) and (max-width:480px) {
+                font-size: 8px;
+            }
+
+        }
+        & .fa-brands.fa-instagram:hover {
+            color: var(--cor-azul-bb);
+            transition: 0.5s;
+            cursor: pointer;
+        }
+        & .fa-brands.fa-linkedin:hover {
+            color: var(--cor-azul-bb);
+            transition: 0.5s;
+            cursor:pointer;
+        }
+        & .fa-brands.fa-github:hover {
+            color: var(--cor-azul-bb);
+            transition: 0.5s;
+            cursor: pointer;
+        }
+    }
+}
+
+.scroll { /*SCROLL JS nav-header*/
+    background-color: black;
+    height: 60px;
+    @media (min-width:320px) and (max-width:480px) {
+        height: 25px;
+    }
+}
+
+.sobre { /*Sobre página inicial*/
+    display: inline-block;
+    color: #FFFF;
+    width: 400px;
+    height: 150px;
+    text-align: justify;
+    padding: 20px;
+    align-content: center;
+    margin-left: 15cm;
+    margin-top: 20rem;
+    @media (min-width:320px) and (max-width:480px) {
+        width: 120px;
+        height: 60px;
+        margin-left: 8rem;
+        padding: 2px;
+        margin-top: 4rem;
+    }
+
+    & h1 {
+        font-size: 32px;
+        padding-bottom: 6px;
+        @media (min-width:320px) and (max-width:480px) {
+            font-size: 8px;
+            padding-bottom: 2px;
+        }
+    }
+    & h2 {
+        font-size: 16px;
+        color: rgb(32, 180, 238);
+        padding-bottom: 6px;
+        @media (min-width:320px) and (max-width:480px) {
+            font-size: 6px;
+            padding-bottom: 2px;
+        }
+    }
+}
+
+.pag2 { /*Segunda página*/
+    width: 1659px;
+    height: 855px;
+    margin-left: auto;
+    margin-right: auto;
+    @media (min-width:320px) and (max-width:480px) {
+        width: 480px;
+        height: 320px;
+    }
+    & .descricao { /*Descrição central da página*/
+        height: 120px;
+        width: 100px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        @media (min-width:320px) and (max-width:480px) {
+            height: 40px;
+            width: 60px;
+        }  
+        & h1 {
+            height: 60px;
+            align-content: center;
+            text-align: center;
+            font-size: 32px;
+            background-color: var(--cor-azul-bb);
+            @media (min-width:320px) and (max-width:480px) {
+                height: 20px;
+                font-size: 11px;
+
+            }
+        }
+        & h2 {
+            height: 60px;
+            font-size: 22px;
+            text-align: center;
+            align-content: center;
+            font-weight: bold;
+            color: var(--cor-letra);
+            @media (min-width:320px) and (max-width:480px) {
+                font-size: 8px;
+                height: 20px;
+            }
+
+        }
+    }
+    
+    .main { /*"CAIXA" do texto página 2*/
+        display: flex;
+        gap: 40px;
+        height: 705px;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transform: translateY(-100%);
+        filter: blur(15px);
+        transition: all 2s;
+        @media (min-width:320px) and (max-width:480px) {
+            height: 280px;
+            width: 480px;
+            gap: 4px;
+        }
+    }
+    & .showman { /*JS MAIN*/
+        opacity: 1;
+        transition: all 2s;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+
+    & img {
+        width: 550px;
+        height: 580px;
+        @media (min-width:320px) and (max-width:480px) {
+            width: 180px;
+            height: 205px;
+        }
+    }
+    & #sobre { /*Texto página 2*/
+        width: 700px;
+        height: 615px;
+        padding: 15px;
+        align-content: center;
+        @media (min-width:320px) and (max-width:480px) {
+            width: 280px;
+            height: 225px;
+        }
+        & h1 {
+            font-size: 32px;
+            color: var(--cor-letra);
+            font-family: cursive;
+            padding-top: 20px;
+            @media (min-width:320px) and (max-width:480px) {
+                font-size: 11px;
+                padding-top: 4px;
+            }
+        }
+        & p {
+            font-size: 14px;
+            color: #FFFF;
+            padding-top: 25px;
+            font-family: cursive;
+            text-align: justify;
+            @media (min-width:320px) and (max-width:480px) {
+                font-size: 8px;
+                padding-top: 4px;
+            }
+        }
+
+        @media (min-width:320px) and (max-width:480px) { /*CLASSE NONE DESAPARECE*/
+            .none {
+                display: none;
+            }
+        }
+    
+        & #local {
+            text-align: right;
+            padding-top: 0;
+            font-family: 'Courier New', Courier, monospace;
+            @media (min-width:320px) and (max-width:480px) {
+                font-size: 8px;
+                padding-top: 2px;
+            }
+        }
+    }
+
+}  
+
+.pag3 { /*Terceira página*/
+    width: 1659px;
+    height: 905px;
+    margin-left: auto;
+    margin-right: auto;
+    @media (min-width:320px) and (max-width:480px) {
+        width: 480px;
+        height: 840px;
+    }
+    & .descricao { /*Descrição central da página*/
+        height: 120px;
+        width: 140px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        @media (min-width:320px) and (max-width:480px) {
+            height: 40px;
+            width: 60px;
+        }  
+        & h1 {
+            height: 60px;
+            align-content: center;
+            text-align: center;
+            font-size: 32px;
+            background-color: var(--cor-azul-bb);
+            @media (min-width:320px) and (max-width:480px) {
+                height: 20px;
+                font-size: 11px;
+
+            }
+        }
+        & h2 {
+            height: 60px;
+            font-size: 20px;
+            text-align: center;
+            align-content: center;
+            font-weight: bold;
+            color: var(--cor-letra);
+            @media (min-width:320px) and (max-width:480px) {
+                font-size: 8px;
+                height: 20px;
+            }
+
+        }
+    }
+    & .servicos {
+        display: flex;
+        gap: 80px;
+        height: 240px;
+        width: 1659px;
+        align-items: center;
+        justify-content: center;
+        @media (min-width:320px) and (max-width:480px) {
+            display: inline-block;
+            width: 480px;
+            height: 264px;
+        }
+        & .card {
+            width: 300px;
+            height: 180px;
+            border-radius: 10px;
+            text-align:center;
+            align-content: center;
+            opacity: 0;
+            transform: translateX(-100%);
+            filter: blur(15px);
+            transition: all 2s;
+            border-left: 1px solid #FFFF;
+            @media (min-width:320px) and (max-width:480px) {
+                width: 420px;
+                margin-left: auto;
+                margin-right: auto;
+                height: 84px;
+                border-radius: 0;
+                border: none;
+                padding-top: 10px;
+                padding-bottom: 15px;
+            }
+            & .fa-brands {
+                padding-bottom: 15px;
+                color: var(--cor-azul-bb);
+                font-size: 36px;
+                @media (min-width:320px) and (max-width:480px) {
+                    font-size: 22px;
+                    padding-bottom: 5px;
+                    padding-top: 10px;
+                }
+            }
+            & .fa-brands:hover {
+                transform: rotateY(60deg);
+                transition: all 1.2s;
+            }
+            & h1 {
+                font-size: 20px;
+                color: var(--cor-letra);
+                padding-bottom: 15px;
+                @media (min-width:320px) and (max-width:480px) {
+                    font-size: 12px;
+                    padding-bottom: 10px;
+                }
+            }
+            & p {
+                color: var(--cor-letra);
+                @media (min-width:320px) and (max-width:480px) {
+                    font-size: 10px;
+                }
+            }
+        }
+        & .show { /*JS CARD*/
+            opacity: 1;
+            transition: all 2s;
+            filter: blur(0);
+            transform: translateX(0);
+        }
+        & .card:nth-child(1) { /*FILHO 1*/
+            transition-delay: 400ms;
+            @media (min-width:320px) and (max-width:480px) {
+                transition-delay: 200ms;
+            }
+        }
+        & .card:nth-child(2) { /*FILHO 2*/
+            transition-delay: 700ms;
+            @media (min-width:320px) and (max-width:480px) {
+                transition-delay: 400ms;
+            }
+        }
+        & .card:nth-child(3) { /*FILHO 3*/
+            transition-delay: 1000ms;
+            @media (min-width:320px) and (max-width:480px) {
+                transition-delay: 600ms;
+            }
+        }
+    }
+}  
+
+footer { /*Rodapé página*/
+    width: 1659px;
+    height: 825px;
+    margin-left: auto;
+    margin-right: auto;
+        @media (min-width:320px) and (max-width:480px) {
+        width: 480px;
+        height: 300px;
+    }
+    & a { /*Atendimento Wpp*/
+        background-color: #25d366;
+        z-index: 10000;
+        text-decoration: none;
+        color: var(--cor-letra);
+        left: 20px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        position: fixed;
+        bottom: 0px;
+        height: 35px;
+        text-align: center;
+        align-content: center;
+        width: 120px;
+        @media (min-width:320px) and (max-width:480px) {
+            right: 25px;
+            width: 80px;
+            height: 25px;
+            font-size: 11px;
+        }
+    }
+    & .descricao { /*Descrição central da página*/
+        height: 120px;
+        width: 120px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        @media (min-width:320px) and (max-width:480px) {
+            height: 40px;
+            width: 50px;
+        }  
+        & h1 {
+            height: 60px;
+            align-content: center;
+            text-align: center;
+            font-size: 32px;
+            background-color: var(--cor-azul-bb);
+            @media (min-width:320px) and (max-width:480px) {
+                height: 20px;
+                font-size: 11px;
+
+            }
+        }
+        & h2 {
+            height: 60px;
+            font-size: 22px;
+            text-align: center;
+            align-content: center;
+            font-weight: bold;
+            color: var(--cor-letra);
+            @media (min-width:320px) and (max-width:480px) {
+                font-size: 8px;
+                height: 20px;
+            }
+
+        }
+    }
+    & .text-footer { /*Conteúdo de texto do rodapé*/
+        text-align: center;
+        align-content: center;
+        height: 600px;
+        opacity: 0;
+        filter: blur(15px);
+        color: var(--cor-letra);
+        @media (min-width:320px) and (max-width:480px) {
+            height: 250px;
+        }
+        & h1 {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 22px;
+            font-weight: 550;
+            @media (min-width:320px) and (max-width:480px) {
+                padding-top: 5px;
+                font-size: 12px;
+                padding-bottom: 5px;
+            }
+        }
+        & p {
+            padding-bottom: 10px;
+            padding-top: 10px;
+            font-size: 16px;
+            @media (min-width:320px) and (max-width:480px) {
+                padding-bottom: 5px;
+                padding-top: 5px;
+                font-size: 10px;
+            }
+        }
+        & #copy {
+            font-size: 12px;
+            padding-top: 8rem;
+            @media (min-width:320px) and (max-width:480px) {
+                padding-top: 4rem;
+                font-size: 8px;
+            }
+        }
+    }
+    & .showfoot { /*JS FOOTER*/
+        opacity: 1;
+        transition: all 2s;
+        filter: blur(0);
+    }
+}  
+
+
+
